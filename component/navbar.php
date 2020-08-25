@@ -22,14 +22,14 @@
       <?php } ?> -->
       <?php 
           if(isset($_SESSION['username'])){
-            echo <<<HTML
-              <form class="form-inline my-2 my-lg-0" action="./admin.php" method="post">
-                <button class="btn btn-outline-danger mr-3 my-sm-0" type="submit"><i class="fas fa-user"></i> {$_SESSION['username']}</button>
+            echo 
+              '<form class="form-inline my-2 my-lg-0" action="./admin.php" method="post">
+                <button class="btn btn-outline-danger mr-3 my-sm-0" type="submit"><i class="fas fa-user"></i> '.$_SESSION['username'].'</button>
               </form>
               <form class="form-inline my-2 my-lg-0" action="./php/logout.php" method="post">
-                <button class="btn btn-outline-danger mr-3 my-sm-0" type="submit" ><i class="fas fa-angle-up"></i></i> Login</button>
-              </form>
-            HTML;
+                <button class="btn btn-outline-danger mr-3 my-sm-0" type="submit" ><i class="fas fa-angle-up"></i></i> Logout</button>
+              </form>'
+            ;
           }else{
             header("location:index.php");
           }

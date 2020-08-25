@@ -27,7 +27,7 @@
 		 					<td>'.$row["username_post"].'</td>
 		 					<td><input type="button" value="แก้ไข" class=" btn-sm btn btn-primary " data-id="'.$row['id_document'].'">
 		 					<input type="button" value="ลบ" class=" btn-sm btn btn-danger " data-id="'.$row['id_document'].'">
-		 					<input style="width:50%;" type="button" value="'.$row['status_post'].'" class="btn-sm btn btn-success status-post" data-id="'.$row['id_document'].'"></td>
+		 					<input style="width:30%;" type="button" value="'.$row['status_post'].'" class="btn-sm btn btn-success status-post" data-id="'.$row['id_document'].'"></td>
 		 				</tr>';
 		 			}
 		 		 ?>

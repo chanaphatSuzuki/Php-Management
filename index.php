@@ -46,32 +46,32 @@
 </head>
 <body >
 	<div  class="signup-form  "  >
-		<?php 
+	<?php 
 			if(isset($_SESSION['username'])&&isset($_SESSION['status'])){
 					header("Location:document.php");
 			}
 			if($_GET){
-				echo <<<HTML
-					<form class="form-register" action="index.php" method="post">
+				echo 
+					'<form class="form-register" action="index.php" method="post">
 				        <h2>Register</h2>
 				        <input type="email" placeholder="Email" class="txtb form-control border" name="email" required>
 				        <input type="text" placeholder="Username" class="txtb form-control border"  name="username" required>
 				        <input type="password" placeholder="Password" class="txtb form-control border" name="password" required>
 				        <input type="submit" value="CreateAccount" class="btn btn-primary">
 				        <a href="index.php" class="btn btn-danger mt-2">Back</a>
-				    </form>
-				HTML;
+				    </form>'
+				;
 			}else{
 
-				echo <<<HTML
-					<form  class="form-login">
+				echo 
+					'<form  class="form-login">
 				        <h2 class="mb-5"><i class="fas fa-user"></i> Login</h2>
 				        <input type="text" placeholder="Username" class="txtb form-control border" name="username" required>
 				        <input type="password" placeholder="Password" class="txtb form-control border" name="password" required>
 				        <input type="submit" value="Login" class="btn btn-primary mt-5">
 				       	<a href="index.php?register" class="btn btn-primary mt-2">Cleate Account</a>
-				    </form>
-				HTML;
+				    </form>'
+				;
 		 }?>
     </div>
 	

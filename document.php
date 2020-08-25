@@ -12,7 +12,8 @@
 	<div class="container  ">
 		<div class="row mt-5 ">
 			<div class="col-md-12 mt-5">
-				<table class="table table-bordered table-sm table-hover">
+				<table class="table table-hover">
+				<thead class="thead-dark">
 		 		<tr align="center">
 						<th>รหัส</th>
 						<th>ชื่อเอกสาร</th>
@@ -21,6 +22,7 @@
 						<th>วันที่</th>
 						<th>สร้างโดย</th>
 					</tr>
+					</thead>
 		 		<?php 
 		 			require "php/connect.php";
 		 			$size=5;

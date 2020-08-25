@@ -67,13 +67,13 @@
           </li>
           <?php 
             if(isset($_SESSION['status'])&&$_SESSION['status']==1){
-              echo <<<HTML
-                <li class="nav-item ml-4">
+              echo 
+                '<li class="nav-item ml-4">
                   <a class="nav-link menu delete" href="" data-id="edit">
                     จัดการเอกสาร
                   </a>
-                </li>
-              HTML;
+                </li>'
+              ;
             }
            ?>
     </ul>
